@@ -12,6 +12,8 @@ Plugin 'Lokaltog/powerline', {'rtp' : 'powerline/bindings/vim'}
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
+Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Bundle 'Valloric/YouCompleteMe'
 
 execute pathogen#infect()
@@ -68,7 +70,7 @@ set nu
 set clipboard=unnamed
 
 "syntax
-au BufNewFile,BufRead *.py
+au BufNewFile,BufRead *.py,*.go,*.c,*.asm
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
